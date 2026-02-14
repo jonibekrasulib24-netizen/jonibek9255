@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Ro‘yxatdan o‘tish</h1>
+      <form id="registrationForm" novalidate>
+        <div class="field-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Ismingizni kiriting" />
+          <p class="error-message" id="usernameError"></p>
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email kiriting" />
+          <p class="error-message" id="emailError"></p>
+        </div>
+
+        <div class="field-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Parol kiriting" />
+          <p class="error-message" id="passwordError"></p>
+        </div>
+
+        <div class="field-group">
+          <span class="label-inline">Gender</span>
+          <div class="radio-group">
+            <label><input type="radio" name="gender" value="Erkak" /> Erkak</label>
+            <label><input type="radio" name="gender" value="Ayol" /> Ayol</label>
+          </div>
+          <p class="error-message" id="genderError"></p>
+        </div>
+
+        <div class="field-group">
+          <label for="country">Davlat</label>
+          <select id="country" name="country">
+            <option value="">Davlatni tanlang</option>
+            <option value="O‘zbekiston">O‘zbekiston</option>
+            <option value="Qozog‘iston">Qozog‘iston</option>
+            <option value="Qirg‘iziston">Qirg‘iziston</option>
+            <option value="Tojikiston">Tojikiston</option>
+          </select>
+          <p class="error-message" id="countryError"></p>
+        </div>
+
+        <div class="field-group terms-group">
+          <label>
+            <input type="checkbox" id="terms" name="terms" />
+            Qoidalarga roziman
+          </label>
+          <p class="error-message" id="termsError"></p>
+        </div>
+
+        <button type="submit">Yuborish</button>
+      </form>
+
+      <div id="result" class="result-box hidden"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
