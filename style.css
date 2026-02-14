@@ -1,0 +1,139 @@
+:root {
+  --bg: #f5f7ff;
+  --card: #ffffff;
+  --text: #1e2442;
+  --accent: #4f46e5;
+  --danger: #dc2626;
+  --success: #16a34a;
+  --border: #d8dcf0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(145deg, #eef2ff, #f9fafb);
+  color: var(--text);
+}
+
+.container {
+  width: min(92vw, 520px);
+  background-color: var(--card);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(55, 65, 81, 0.16);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.field-group {
+  margin-bottom: 14px;
+}
+
+label,
+.label-inline {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 11px 12px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select {
+  background-color: #f8faff;
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #5b5b77 50%),
+    linear-gradient(135deg, #5b5b77 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(1em + 2px), calc(100% - 12px) calc(1em + 2px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.12);
+}
+
+.input-error {
+  border-color: var(--danger) !important;
+}
+
+.input-success {
+  border-color: var(--success) !important;
+}
+
+.radio-group {
+  display: flex;
+  gap: 18px;
+  padding-top: 4px;
+}
+
+.radio-group label,
+.terms-group label {
+  font-weight: 500;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.error-message {
+  min-height: 18px;
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--danger);
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+.result-box {
+  margin-top: 18px;
+  border: 1px solid #86efac;
+  background: #f0fdf4;
+  color: #14532d;
+  border-radius: 10px;
+  padding: 14px;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
