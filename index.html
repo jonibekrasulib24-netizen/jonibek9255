@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS JS qismlari</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar" aria-label="Asosiy menyu">
+        <a class="logo" href="#home">WebStart</a>
+        <button class="menu-toggle" type="button" aria-label="Menyuni ochish" aria-expanded="false">
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="#html">HTML</a></li>
+          <li><a href="#css">CSS</a></li>
+          <li><a href="#js">JavaScript</a></li>
+          <li><a href="#contact">Aloqa</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Frontend asoslari</p>
+          <h1>HTML, CSS va JavaScript qismlari alohida tayyorlandi</h1>
+          <p>
+            Ushbu kichik loyiha sahifa tuzilishi, chiroyli dizayn va oddiy
+            interaktiv funksiyalar qanday ajratib yozilishini ko‘rsatadi.
+          </p>
+          <a class="primary-button" href="#html">Boshlash</a>
+        </div>
+        <div class="hero-card" aria-label="Loyiha ko‘rsatkichlari">
+          <span class="card-number">3</span>
+          <span class="card-label">alohida fayl: HTML, CSS, JS</span>
+        </div>
+      </section>
+
+      <section class="features" aria-label="Frontend qismlari">
+        <article class="feature-card" id="html">
+          <span class="feature-icon">🏗️</span>
+          <h2>HTML qismi</h2>
+          <p>
+            HTML sahifaning skeletini yaratadi: sarlavhalar, bo‘limlar,
+            matnlar, tugmalar va forma elementlari shu yerda joylashadi.
+          </p>
+        </article>
+
+        <article class="feature-card" id="css">
+          <span class="feature-icon">🎨</span>
+          <h2>CSS qismi</h2>
+          <p>
+            CSS ranglar, joylashuv, masofalar, shriftlar va moslashuvchan
+            ko‘rinishni boshqaradi.
+          </p>
+        </article>
+
+        <article class="feature-card" id="js">
+          <span class="feature-icon">⚙️</span>
+          <h2>JavaScript qismi</h2>
+          <p>
+            JavaScript menyuni ochish-yopish, tugma bosilganda natija chiqarish
+            kabi interaktiv harakatlarni bajaradi.
+          </p>
+        </article>
+      </section>
+
+      <section class="demo-panel" aria-labelledby="demo-title">
+        <div>
+          <p class="eyebrow">JS demo</p>
+          <h2 id="demo-title">Tugmani bosing va xabarni ko‘ring</h2>
+          <p id="demo-message">Hozircha xabar yo‘q.</p>
+        </div>
+        <button class="primary-button" id="message-button" type="button">
+          Xabar chiqarish
+        </button>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Aloqa formasi</h2>
+        <form class="contact-form" id="contact-form">
+          <label>
+            Ismingiz
+            <input type="text" name="name" placeholder="Masalan: Jonibek" required />
+          </label>
+          <label>
+            Xabaringiz
+            <textarea name="message" rows="4" placeholder="Xabaringizni yozing" required></textarea>
+          </label>
+          <button class="primary-button" type="submit">Yuborish</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 WebStart. HTML, CSS va JS alohida fayllarda yozildi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
